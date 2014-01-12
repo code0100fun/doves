@@ -15,3 +15,7 @@ spec/reports
 test/tmp
 test/version_tmp
 tmp
+.spotify
+.spotify_appkey.key
+.spotify_credentials.yaml
+.spotify_blob.yaml
