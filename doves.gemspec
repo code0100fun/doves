@@ -24,4 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "spotify"
   spec.add_development_dependency "plaything"
   spec.add_development_dependency "activesupport"
+  spec.add_development_dependency "ffi-pcap"
+  spec.add_development_dependency "ffi-packets"
+  spec.add_development_dependency "redis"
 end
