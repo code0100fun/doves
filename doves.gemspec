@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "ffi-pcap"
   spec.add_development_dependency "ffi-packets"
   spec.add_development_dependency "redis"
+  spec.add_development_dependency "highline"
 end

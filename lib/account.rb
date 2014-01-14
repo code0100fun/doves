@@ -30,10 +30,7 @@ module Doves
 
     def blob
       if File.exists? blob_file
-        puts 'blob exists'
         @_blob ||= YAML.load_file(blob_file)['SPOTIFY_BLOB']
-        puts @_blob
-        @_blob
       end
     end
 

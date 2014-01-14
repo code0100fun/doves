@@ -13,7 +13,7 @@ module Doves
     def initialize
       $stderr.sync = true
       @logger = Logger.new($stderr)
-      @logger.level = Logger::INFO
+      @logger.level = Logger::ERROR
     end
 
     class << self

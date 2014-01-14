@@ -8,6 +8,10 @@ module Doves
       end
     end
 
+    def title
+      Spotify.track_name(track)
+    end
+
     def to_link offset = offset
       link = Spotify.link_create_from_track track, offset*1000
       Link.new link

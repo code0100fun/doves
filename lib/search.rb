@@ -6,9 +6,10 @@ require './lib/tracks'
 module Doves
   class Search
 
-    def query session, term
+    def query session, term, options
       Doves::Log.info "Searching '#{term}'"
-      opts = [0,1,0,1,0,1,0,1]
+      limit = options[:limit] || 10
+      opts = [0,limit,0,0,0,0,0,0]
       tracks = nil
       callback = proc do |search, data|
         Doves::Log.info "Search complete!"
